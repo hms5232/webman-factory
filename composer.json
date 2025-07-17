@@ -1,0 +1,18 @@
+{
+    "name": "hms5232/webman-factory",
+    "description": "Factory for webman framework.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hms5232\\WebmanFactory\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hms5232",
+            "email": "hms5232@hhming.moe"
+        }
+    ],
+    "require": {}
+}
