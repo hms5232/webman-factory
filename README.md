@@ -53,7 +53,20 @@ Like Laravel factory, but something different and you should do the following ad
     }
     ```
 
-* The model file should specify the factory:
+* The model file should use `Hms5232\WebmanFactory\HasFactory` instead of `Illuminate\Database\Eloquent\Factories\HasFactory`:
+  
+  ```diff
+  - use Illuminate\Database\Eloquent\Factories\HasFactory;
+  + use Hms5232\WebmanFactory\HasFactory;
+
+  class Admin extends Model
+  {
+      use HasFactory;
+  }  
+  ```
+  
+  otherwise, you should specify the factory:
+  
   ```php
   // app/model/Admin.php
   
