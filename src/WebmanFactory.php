@@ -10,13 +10,10 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 abstract class WebmanFactory extends Factory
 {
     /**
-     * @var \Faker\Generator
+     * @inheritDoc
      */
-    protected $faker;
-
-    public function __construct()
+    protected function withFaker()
     {
-        parent::__construct();
-        $this->faker = \Faker\Factory::create();
+        return \Faker\Factory::create();
     }
 }
