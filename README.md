@@ -36,23 +36,6 @@ Like Laravel factory, but something different and you should do the following ad
     }
     ```
 
-*  The factory file should specify the model:
-
-    ```php
-    use app\model\Admin;
-    use Hms5232\WebmanFactory\WebmanFactory;
-
-    class AdminFactory extends WebmanFactory
-    {
-        /**
-         * The name of the factory's corresponding model.
-         *
-         * @var class-string<\Illuminate\Database\Eloquent\Model>
-         */
-         protected $model = Admin::class;
-    }
-    ```
-
 * The model file should use `Hms5232\WebmanFactory\HasFactory` instead of `Illuminate\Database\Eloquent\Factories\HasFactory`:
   
   ```diff
