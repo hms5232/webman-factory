@@ -12,9 +12,9 @@ You can remove the `--dev` flag as your need.
 
 ## Usage
 
-Like Laravel factory, but something different and you should do the following additional:
+Like [Laravel factory](https://laravel.com/docs/eloquent-factories), but there are something different, and you need to do the following additional:
 
-* The factory file should extend `Hms5232\WebmanFactory\WebmanFactory`:
+* The factory class should extend `Hms5232\WebmanFactory\WebmanFactory`:
 
     ```php
     use Hms5232\WebmanFactory\WebmanFactory;
@@ -36,7 +36,7 @@ Like Laravel factory, but something different and you should do the following ad
     }
     ```
 
-* The model file should use `Hms5232\WebmanFactory\HasFactory` instead of `Illuminate\Database\Eloquent\Factories\HasFactory`:
+* The model class should use `Hms5232\WebmanFactory\HasFactory` instead of `Illuminate\Database\Eloquent\Factories\HasFactory`:
   
   ```diff
   - use Illuminate\Database\Eloquent\Factories\HasFactory;
